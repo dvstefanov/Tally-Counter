@@ -1,5 +1,5 @@
 .counter {
-    background-color: #33333D;
+    background-color: var(--foreground-color);
     width: 400px;
     height: 400px;
     border-top-left-radius: 8px;
@@ -21,7 +21,7 @@
 }
 
 .btns-wrapper button {
-    color: #79797b;
+    color: var(--btn-text-color);
     font-size: 1.5rem;
     background-color: transparent;
     border: none;
@@ -30,13 +30,13 @@
 
 .counter-value {
     font-size: 10rem;
-    color: #31C48D;
+    color: var(--primary-text-color);
     font-weight: 700;
 }
 
 @media (hover: hover) {
     .btns-wrapper button:hover {
-        color: #31C48D;
-        outline: 1px solid #31C48D;
+        color: var(--primary-text-color);
+        outline: 1px solid var(--primary-text-color);
     }
 }
