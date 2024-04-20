@@ -1,14 +1,12 @@
-import React from 'react';
-
 import Toggle from '../Toggle/Toggle';
 
 import classes from './Header.module.css';
 
-const Header = ({isDark, onToggle}) => {
+const Header = () => {
     return (
         <header className={classes.header}>
             <h1>Tally Count</h1>
-            <Toggle isChecked={isDark} handleChange={onToggle} />
+            <Toggle />
         </header>
     );
 };
