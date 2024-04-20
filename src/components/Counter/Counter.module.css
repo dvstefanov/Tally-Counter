@@ -38,5 +38,6 @@
     .btns-wrapper button:hover {
         color: var(--primary-text-color);
         outline: 1px solid var(--primary-text-color);
+        cursor: pointer;
     }
 }

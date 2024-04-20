@@ -6,9 +6,11 @@ export const ThemeContext = createContext({
 });
 
 function themeReducer(state, action) {
-    return {
-        theme: state.theme === 'dark' ? 'light' : 'dark',
-    };
+    if (action.type === 'TOGGLE') {
+        return {
+            theme: state.theme === 'dark' ? 'light' : 'dark',
+        };
+    }
 }
 
 export default function ThemeContextProvider({ children }) {
