@@ -9,6 +9,8 @@
     --foreground-color: #33333D;
     --primary-text-color: #31C48D;
     --btn-text-color: #79797b;
+    --toggle-bg: rgb(126, 126, 9);
+    --toggle-fg: yellow;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -18,6 +20,14 @@
 
 [data-theme='light'] {
     --background-color: rgb(255, 255, 255);
+    --foreground-color: #b2b2b4;
+    --primary-text-color: #067d34;
+    --btn-text-color: #5a5a5c;
+}
+
+[data-theme='dark'] {
+    --toggle-bg: rgb(243, 243, 55);
+    --toggle-fg: rgb(28, 28, 243);
 }
 
 *,
